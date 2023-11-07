@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form>
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for="name">
+                Name: <input type="text" name="Your-name" id="name" placeholder="Enter Your Name">
+            </label>
+            <br>
+            <br>
+            <label for="email">
+                Email : <input type="email" name="Your-email" id="email">
+            </label>
+        </fieldset>
+        <br>
+        <fieldset>
+
+            <legend>Your Review</legend>
+            <label for="hear-about">
+                How did you hear about us? </label>
+            <select id="hear-about">
+                <option value="Google">Google</option>
+                <option value="Google">Facebook</option>
+                <option value="Google">Instagram</option>
+                <option value="Google">Other</option>
+            </select>
+            <br><br>
+            <label for="Your-location">
+                Your Location : <input name="Your-location" id="Your-location" list="country">
+                <datalist id="country">
+                    <option>Pakistan</option>
+                    <option>India</option>
+                    <option>Iran</option>
+                    <option>Other</option>
+                </datalist>
+            </label>
+            <br><br>
+            Would you visit again?<br>
+            <label for="Yes">
+                <input type="radio" name="rating" value="yes" id="Yes">Yes
+            </label>
+            <label for="no">
+                <input type="radio" name="rating" value="no" id="no">No
+            </label>
+            <label for="Maybe">
+                <input type="radio" name="rating" value="other" id="Maybe">Maybe
+            </label><br><br>
+            <label for="comments">
+                Comments : <Br><textarea name="comments" id="comments" cols="30" rows="6"></textarea>
+            </label><br><br>
+            <label for="check">
+                <input type="checkbox" name="check" id="check"> Sign me up for email updates
+            </label><br><br>
+            <input type="submit" value="Submit review">
+        </fieldset>
+    </form>
+</body>
+
+</html>
